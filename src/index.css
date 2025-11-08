@@ -1,0 +1,157 @@
+/* 🌌 Global Reset and Background Theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #eaf4ff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ✨ Royal Blue Nebula Background */
+  background: radial-gradient(circle at 20% 20%, #001133 0%, #001a66 30%, #0a3cff 60%, #000a33 100%);
+  background-size: 400% 400%;
+  animation: bgFlow 20s ease infinite;
+}
+
+/* 🌈 Animated Background Flow */
+@keyframes bgFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌈 Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0099ff, #66ccff);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* 🧠 Headings */
+h1, h2, h3 {
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00aaff, #80dfff, #1e90ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(0, 140, 255, 0.4);
+}
+
+/* ✨ Buttons */
+button {
+  background: linear-gradient(90deg, #0040ff, #00c6ff);
+  border: none;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 128, 255, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #007bff, #00e6ff);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* 📦 Cards / Panels */
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 162, 255, 0.5);
+}
+
+/* 💬 Text Inputs */
+input, textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 50, 0.3);
+  color: #e0f7ff;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #00baff;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+}
+
+/* 🧭 Links */
+a {
+  color: #66ccff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #a3e7ff;
+  text-shadow: 0 0 6px rgba(0, 180, 255, 0.5);
+}
+
+/* 🦶 Footer */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #a8d8ff;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+}
+
+/* 🌟 Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🖼️ Utility: Center Content */
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🧩 Container Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 🪄 Soft Shadows */
+.shadow-soft {
+  box-shadow: 0 4px 25px rgba(0, 0, 100, 0.3);
+}
